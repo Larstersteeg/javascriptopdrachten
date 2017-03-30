@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>opdracht</title>
+    <style>
+    .field1, field2, field3 {
+      transition: 0.4s;
+    }
+    
+    </style>
+    
+  </head>
+  <body>
+    <div>
+      <div>Breedte: <input type="number" value="" id="wide" onkeyup="changeField();"> Pixels</div>
+      <div>Hoogte: <input type="number" value="" id="height" onkeyup="changeField();"> Pixels</div>
+      <div>
+        Kleur:
+        <select id='color' onchange="changeField();">
+          <option value='red'>Rood</option>
+          <option value='blue'>Blue</option>
+          <option value='green'>Green</option>
+          <option value='yellow'>Yellow</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="field1"></div><br>
+    <div id="field2"></div><br>
+    <div id="field3"></div><br>
+  </body>
+  <script src="javascr.js"></script>
+</html>
