@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Boodschappenlijst</title>
+  </head>
+  <body>
+    <script>
+        function createList(){
+            var str = document.getElementById("lijstje").value; 
+            var result = str.replace(/, /g, "<br>");
+            document.getElementById("lijst").innerHTML += result;
+        }
+    </script>
+    <input type="text" id="lijstje" /><button type="button" onclick="createList();">Maak het lijstje!</button>
+
+    <div id="lijst"></div>
+  </body>
+</html>

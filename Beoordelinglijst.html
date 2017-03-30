@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="number" id="nummer" value="0">
+  <button onclick="function1()">Resultaat 1</button>
+  <button onclick="function2()">Resultaat 2</button>
+  <p id="result"></p>
+  <script>
+      //eerste resultaat
+  function function1() {
+      var x = document.getElementById("nummer").value;
+      if (x >=  75 && x <= 100) {
+         document.getElementById("result").innerHTML += 'Het cijfer is ' + x + ' en is dus goed. <br>';
+      } else if (x >=  60 && x <= 74) {
+         document.getElementById("result").innerHTML += 'Het cijfer is ' + x + ' en is dus voldoende. <br>';
+      } else if (x >=  50 && x <= 59) {
+         document.getElementById("result").innerHTML += 'Het cijfer is ' + x + ' en is gemiddeld. <br>';
+      } else if (x >=  0 && x <= 49) {
+         document.getElementById("result").innerHTML += 'Het cijfer is ' + x + ' en is dus niet voldoende. <br>';
+      } else {
+         document.getElementById("result").innerHTML += 'Voer een nummer in. <br>';
+      }
+  }
+  //tweede resultaat
+  function function2() {
+      var x = document.getElementById("nummer").value;
+      if (x >=  75 && x <= 100) {
+         document.getElementById("result").innerHTML += 'De beoordeling is goed, want het cijfer is ' + x + '.<br>';
+      } else if (x >=  60 && x <= 74) {
+         document.getElementById("result").innerHTML += 'De beoordeling is voldoende, want het cijfer is ' + x + '.<br>';
+      } else if (x >=  50 && x <= 59) {
+         document.getElementById("result").innerHTML += 'De beoordeling is gemiddeld, want het cijfer is ' + x + '.<br>';
+      } else if (x >=  0 && x <= 49) {
+         document.getElementById("result").innerHTML += 'De beoordeling is niet voldoende, want het cijfer is ' + x + '.<br>';
+      } else {
+         document.getElementById("result").innerHTML += 'Voer een nummer in. <br />';
+      }
+  }
+  </script>
+
+</body>
+</html>
